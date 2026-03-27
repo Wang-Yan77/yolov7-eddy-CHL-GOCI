@@ -1,4 +1,3 @@
-The demo code for our ESSD paper: Wang, Y., Chen, G., Yang, J., Gui, Z., and Peng, D.: A submesoscale eddy identification dataset in the northwest Pacific Ocean derived from GOCI I chlorophyll a data based on deep learning, Earth Syst. Sci. Data, 16, 5737–5752, https://doi.org/10.5194/essd-16-5737-2024, 2024.
 # Submesoscale Eddy Identification from GOCI-I Chlorophyll-a (YOLOv7)
 
 This repository contains the code accompanying the paper:
@@ -114,23 +113,7 @@ Configure script settings for:
 
 ---
 
-## 5. Engineering updates in this codebase
-
-To improve maintainability and reproducibility:
-
-1. **`predict.py` refactor**
-   - Split geogrid loading, coordinate projection, date iteration, and directory inference into independent functions.
-   - Fixed type mismatch risk in tile row/column index comparisons (`int` vs `str`).
-   - Unified path handling via `os.path`.
-   - Added clearer function-level comments/docstrings.
-
-2. **README rewrite**
-   - Added paper context, project structure, requirements, and run instructions.
-   - Clarified expected data organization for `dir_predict`.
-
----
-
-## 6. Daily JSON output contents (`dir_predict`)
+## 5. Daily JSON output contents (`dir_predict`)
 
 Per-day JSON files include:
 
@@ -146,7 +129,7 @@ This aligns with the production workflow used to build the eddy identification d
 
 ---
 
-## 7. Citation
+## 6. Citation
 
 If you use this repository, please cite:
 
@@ -164,6 +147,6 @@ If you use this repository, please cite:
 
 ---
 
-## 8. License
+## 7. License
 
 See `LICENSE` for details.
